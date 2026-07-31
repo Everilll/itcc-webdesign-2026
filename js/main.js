@@ -34,12 +34,19 @@ $(document).ready(function () {
   }
 
   /**
-   * Create a placeholder image div (CSS-only, no broken img).
+   * Create a placeholder image div or a real image div if user provided one.
    */
-  function createPlaceholderImg(text, extraClass) {
+  function renderImage(item, extraClass) {
     var cls = extraClass ? ' ' + extraClass : '';
-    return '<div class="placeholder-img' + cls + '" style="background:' + placeholderBg(text) + '">' +
-      '<i class="bx bx-image"></i></div>';
+    // Check if item has a valid image string that is not the default dummy
+    var hasRealImage = item.gambar && item.gambar.indexOf("artikel-") === -1 && item.gambar.indexOf("portfolio-") === -1;
+    
+    if (hasRealImage) {
+      return '<div class="' + cls.trim() + '" style="background-image: url(\'' + item.gambar + '\'); background-size: cover; background-position: center;"></div>';
+    } else {
+      return '<div class="placeholder-img' + cls + '" style="background:' + placeholderBg(item.judul) + '">' +
+        '<i class="bx bx-image"></i></div>';
+    }
   }
 
   var page = getCurrentPage();
@@ -194,7 +201,7 @@ $(document).ready(function () {
       var feat = DATA_ARTIKEL[DATA_WAWASAN.featuredIndex];
       if (feat) {
         $featured.html(
-          createPlaceholderImg(feat.judul, "wawasan-featured__img") +
+          renderImage(feat, "wawasan-featured__img") +
           '<div class="wawasan-featured__content">' +
             '<span class="wawasan-featured__kategori">' + feat.kategoriLabel + "</span>" +
             '<span class="wawasan-featured__meta">' + feat.tanggal + " &bull; " + feat.waktuBaca + "</span>" +
@@ -230,7 +237,7 @@ $(document).ready(function () {
       DATA_ARTIKEL.slice(0, 4).forEach(function (artikel) {
         $carousel.append(
           '<div class="artikel-card">' +
-            createPlaceholderImg(artikel.judul, "artikel-card__img-wrap") +
+            renderImage(artikel, "artikel-card__img-wrap") +
             '<div class="artikel-card__body">' +
               '<span class="artikel-card__kategori">' + artikel.kategoriLabel + "</span>" +
               "<h3>" + artikel.judul + "</h3>" +
@@ -312,7 +319,7 @@ $(document).ready(function () {
         var detailId = "detail-" + artikel.id;
         $list.append(
           '<article class="artikel-card" data-aos="fade-up" data-kategori="' + artikel.kategori + '">' +
-            createPlaceholderImg(artikel.judul, "artikel-card__img-wrap") +
+            renderImage(artikel, "artikel-card__img-wrap") +
             '<div class="artikel-card__body">' +
               '<span class="artikel-card__kategori">' + artikel.kategoriLabel + "</span>" +
               "<h3>" + artikel.judul + "</h3>" +
@@ -374,9 +381,7 @@ $(document).ready(function () {
         $grid.append(
           '<div class="portfolio-card" data-aos="fade-up" data-aos-delay="' + delay + '"' +
             ' data-fancybox="gallery" data-caption="<strong>' + item.judul + '</strong><br>' + item.deskripsi + '">' +
-            '<div class="placeholder-img portfolio-card__img" style="background:' + placeholderBg(item.judul) + '">' +
-              '<i class="bx bx-image"></i>' +
-            '</div>' +
+            renderImage(item, "portfolio-card__img") +
             '<div class="portfolio-card__overlay">' +
               "<h3>" + item.judul + "</h3>" +
               "<span>" + item.kategori + "</span>" +
