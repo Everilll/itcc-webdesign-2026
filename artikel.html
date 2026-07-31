@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Data Center | Edukasi</title>
+
+  <link rel="stylesheet" href="lib/aos/aos.css">
+  <link rel="stylesheet" href="lib/boxicons/boxicons.min.css">
+  <link rel="stylesheet" href="lib/fancybox/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__logo">Green<span>DataCenter</span></div>
+    <nav class="navbar__menu">
+      <ul>
+        <li><a href="index.html">Utama</a></li>
+        <li><a href="artikel.html" class="active">Edukasi</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+    <button class="navbar__toggle" aria-label="Toggle menu">
+      <i class='bx bx-menu'></i>
+    </button>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1 data-aos="fade-up">Edukasi Green Data Center</h1>
+    <p data-aos="fade-up">Placeholder deskripsi singkat halaman edukasi.</p>
+  </section>
+
+  <!-- FILTER KATEGORI -->
+  <section class="artikel-filter" id="artikel-filter">
+    <button class="filter-btn active" data-kategori="semua">Semua</button>
+    <button class="filter-btn" data-kategori="cooling">Cooling</button>
+    <button class="filter-btn" data-kategori="ai">AI Monitoring</button>
+    <button class="filter-btn" data-kategori="energy">Renewable Energy</button>
+  </section>
+
+  <!-- LIST ARTIKEL -->
+  <section class="artikel-list" id="artikel-list">
+    <!-- akan di-render dari data.js via main.js -->
+    <article class="artikel-card" data-aos="fade-up" data-kategori="cooling">
+      <h3>Judul Artikel Placeholder 1</h3>
+      <span class="artikel-card__kategori">Cooling</span>
+      <p>Ringkasan singkat placeholder untuk artikel pertama.</p>
+      <a href="#" class="artikel-card__link" data-fancybox data-src="#artikel-detail-1">Baca selengkapnya</a>
+    </article>
+    <article class="artikel-card" data-aos="fade-up" data-kategori="ai">
+      <h3>Judul Artikel Placeholder 2</h3>
+      <span class="artikel-card__kategori">AI Monitoring</span>
+      <p>Ringkasan singkat placeholder untuk artikel kedua.</p>
+      <a href="#" class="artikel-card__link">Baca selengkapnya</a>
+    </article>
+    <article class="artikel-card" data-aos="fade-up" data-kategori="energy">
+      <h3>Judul Artikel Placeholder 3</h3>
+      <span class="artikel-card__kategori">Renewable Energy</span>
+      <p>Ringkasan singkat placeholder untuk artikel ketiga.</p>
+      <a href="#" class="artikel-card__link">Baca selengkapnya</a>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Green Data Center — ITCC Web Design Competition. Placeholder footer.</p>
+  </footer>
+
+  <script src="lib/jquery/jquery-3.7.1.min.js"></script>
+  <script src="lib/aos/aos.js"></script>
+  <script src="lib/fancybox/fancybox.umd.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

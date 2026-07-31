@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Data Center | Forum Diskusi</title>
+
+  <link rel="stylesheet" href="lib/aos/aos.css">
+  <link rel="stylesheet" href="lib/boxicons/boxicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__logo">Green<span>DataCenter</span></div>
+    <nav class="navbar__menu">
+      <ul>
+        <li><a href="index.html">Utama</a></li>
+        <li><a href="artikel.html">Edukasi</a></li>
+        <li><a href="forum.html" class="active">Forum</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+    <button class="navbar__toggle" aria-label="Toggle menu">
+      <i class='bx bx-menu'></i>
+    </button>
+  </header>
+
+  <section class="page-header">
+    <h1 data-aos="fade-up">Forum Diskusi</h1>
+    <p data-aos="fade-up">Placeholder: ajakan diskusi seputar server hemat energi & smart sustainability.</p>
+  </section>
+
+  <!-- FORM POSTING BARU -->
+  <section class="forum-form" id="forum-form">
+    <h2>Buat Diskusi Baru</h2>
+    <form id="form-diskusi">
+      <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+      </div>
+      <div class="form-group">
+        <label for="judul">Judul Diskusi</label>
+        <input type="text" id="judul" name="judul" placeholder="Judul topik diskusi" required>
+      </div>
+      <div class="form-group">
+        <label for="isi">Isi</label>
+        <textarea id="isi" name="isi" rows="4" placeholder="Tulis diskusimu di sini..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Kirim Diskusi</button>
+    </form>
+  </section>
+
+  <!-- FILTER -->
+  <section class="forum-filter" id="forum-filter">
+    <button class="filter-btn active" data-kategori="semua">Semua Topik</button>
+    <button class="filter-btn" data-kategori="hardware">Hardware</button>
+    <button class="filter-btn" data-kategori="software">Software/Monitoring</button>
+    <button class="filter-btn" data-kategori="lainnya">Lainnya</button>
+  </section>
+
+  <!-- LIST DISKUSI -->
+  <section class="forum-list" id="forum-list">
+    <!-- gabungan dummy data.js + localStorage, di-render via forum.js -->
+    <article class="forum-post" data-aos="fade-up">
+      <div class="forum-post__header">
+        <span class="forum-post__nama">Placeholder Nama</span>
+        <span class="forum-post__tanggal">Placeholder Tanggal</span>
+      </div>
+      <h3 class="forum-post__judul">Judul Diskusi Placeholder</h3>
+      <p class="forum-post__isi">Isi diskusi placeholder untuk contoh tampilan sebelum data asli di-render.</p>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Green Data Center — ITCC Web Design Competition. Placeholder footer.</p>
+  </footer>
+
+  <script src="lib/jquery/jquery-3.7.1.min.js"></script>
+  <script src="lib/aos/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/forum.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
