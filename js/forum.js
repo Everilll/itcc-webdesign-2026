@@ -3,7 +3,7 @@
  * Menggabungkan dummy posts (DATA_FORUM_STARTER dari data.js)
  * dengan posts dari localStorage, lalu render ke DOM.
  *
- * Dipakai di: forum.html (di-load SEBELUM main.js)
+ * Dipakai di: forum.html (di-load SEBELUM index.js)
  */
 
 (function () {
