@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Data Center | Beranda</title>
+  <meta name="description" content="Portal edukasi Green Data Center — teknologi server hemat energi untuk komunitas berkelanjutan. Pelajari smart cooling, AI monitoring, dan energi terbarukan.">
 
   <!-- Library CSS -->
   <link rel="stylesheet" href="lib/aos/aos.css">
-  <link rel="stylesheet" href="lib/boxicons/boxicons.min.css">
+  <link rel="stylesheet" href="lib/boxicons/css/boxicons.min.css">
   <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
@@ -17,9 +18,25 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- GLOBAL BACKGROUND -->
+  <div class="global-bg" aria-hidden="true">
+    <div class="global-aurora"><i></i><i></i><i></i></div>
+    <div class="global-floating">
+      <i class='bx bx-leaf'></i>
+      <i class='bx bx-data'></i>
+      <i class='bx bx-server'></i>
+      <i class='bx bx-chip'></i>
+      <i class='bx bx-wifi'></i>
+      <i class='bx bx-planet'></i>
+      <i class='bx bx-cloud'></i>
+      <i class='bx bx-bulb'></i>
+      <i class='bx bx-leaf'></i>
+      <i class='bx bx-server'></i>
+    </div>
+  </div>
 
   <!-- NAVBAR -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="navbar__logo">Green<span>DataCenter</span></div>
     <nav class="navbar__menu">
       <ul>
@@ -36,10 +53,12 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
+
     <div class="hero__content">
-      <h1>Teknologi Server yang <span class="typed-text"></span></h1>
+      <span class="eyebrow"><i class='bx bxs-bolt'></i> Inovasi Hijau Terbaru</span>
+      <h1>Membangun Masa Depan Digital yang <span class="accent typed-text"></span></h1>
       <p class="hero__subtitle">
-        Placeholder: kalimat pembuka soal green data center & efisiensi energi server untuk komunitas berkelanjutan.
+        Placeholder: kalimat pembuka soal green data center &amp; efisiensi energi server untuk komunitas berkelanjutan.
       </p>
       <div class="hero__cta">
         <a href="artikel.html" class="btn btn--primary">Pelajari Lebih Lanjut</a>
@@ -47,50 +66,58 @@
       </div>
     </div>
     <div class="hero__visual">
-      <!-- placeholder ilustrasi/gambar hero -->
+      <div class="hero__illustration">
+        <div class="hero__illustration-inner">
+          <i class='bx bx-server'></i>
+          <div class="hero__illustration-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__badge">
+        <i class='bx bx-check-circle'></i>
+        <div>
+          <span class="hero__badge-label">Efisiensi Energi</span>
+          <span class="hero__badge-value">Meningkat 40%</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- STATISTIK -->
   <section class="stats" id="stats">
-    <h2 data-aos="fade-up">Kenapa Efisiensi Energi Server Penting?</h2>
     <div class="stats__grid">
-      <div class="stats__card" data-aos="fade-up" data-aos-delay="100">
-        <i class='bx bx-bolt-circle'></i>
-        <h3>0%</h3>
-        <p>Placeholder statistik konsumsi energi data center global</p>
-      </div>
-      <div class="stats__card" data-aos="fade-up" data-aos-delay="200">
-        <i class='bx bx-leaf'></i>
-        <h3>0%</h3>
-        <p>Placeholder statistik potensi penghematan dengan smart cooling</p>
-      </div>
-      <div class="stats__card" data-aos="fade-up" data-aos-delay="300">
-        <i class='bx bx-server'></i>
-        <h3>0+</h3>
-        <p>Placeholder statistik jumlah home server/self-hosting aktif</p>
-      </div>
+      <!-- di-render dari data.js via main.js -->
     </div>
   </section>
 
   <!-- FITUR / VALUE PROPOSITION -->
   <section class="features" id="features">
-    <h2 data-aos="fade-up">Apa yang Bisa Kamu Pelajari di Sini</h2>
+    <span class="eyebrow" data-aos="fade-up">Teknologi Cerdas</span>
+    <h2 data-aos="fade-up">Teknologi Cerdas, Masa Depan Hijau</h2>
+    <p data-aos="fade-up">Pendekatan holistik kami mengintegrasikan inovasi perangkat keras dan lunak untuk memaksimalkan performa sambil menjaga bumi.</p>
     <div class="features__grid">
-      <div class="features__item" data-aos="fade-up">
-        <i class='bx bx-chip'></i>
-        <h3>Smart Cooling</h3>
-        <p>Placeholder deskripsi singkat.</p>
+      <!-- di-render dari data.js via main.js -->
+    </div>
+  </section>
+
+  <!-- WAWASAN TERBARU -->
+  <section class="wawasan-terbaru" id="wawasan-terbaru">
+    <div class="wawasan-terbaru__header">
+      <div>
+        <h2 data-aos="fade-up">Wawasan Terbaru</h2>
+        <p data-aos="fade-up">Update seputar teknologi hijau dan praktik terbaik industri.</p>
       </div>
-      <div class="features__item" data-aos="fade-up" data-aos-delay="100">
-        <i class='bx bx-brain'></i>
-        <h3>AI Load Balancing</h3>
-        <p>Placeholder deskripsi singkat.</p>
-      </div>
-      <div class="features__item" data-aos="fade-up" data-aos-delay="200">
-        <i class='bx bx-sun'></i>
-        <h3>Renewable Power</h3>
-        <p>Placeholder deskripsi singkat.</p>
+      <a href="artikel.html" class="wawasan-terbaru__link" data-aos="fade-up">Lihat Semua Artikel &rarr;</a>
+    </div>
+    <div class="wawasan-terbaru__grid">
+      <!-- featured article besar -->
+      <article class="wawasan-featured" data-aos="fade-up">
+        <!-- di-render via main.js -->
+      </article>
+      <!-- list artikel kecil -->
+      <div class="wawasan-list">
+        <!-- di-render via main.js -->
       </div>
     </div>
   </section>
@@ -99,35 +126,49 @@
   <section class="artikel-preview" id="artikel-preview">
     <h2 data-aos="fade-up">Artikel Edukasi Pilihan</h2>
     <div class="owl-carousel artikel-carousel">
-      <!-- item di-render via JS dari data.js, ini placeholder statis dulu -->
-      <div class="artikel-card">
-        <h3>Judul Artikel Placeholder 1</h3>
-        <p>Ringkasan singkat placeholder.</p>
-        <a href="artikel.html">Baca selengkapnya</a>
-      </div>
-      <div class="artikel-card">
-        <h3>Judul Artikel Placeholder 2</h3>
-        <p>Ringkasan singkat placeholder.</p>
-        <a href="artikel.html">Baca selengkapnya</a>
-      </div>
-      <div class="artikel-card">
-        <h3>Judul Artikel Placeholder 3</h3>
-        <p>Ringkasan singkat placeholder.</p>
-        <a href="artikel.html">Baca selengkapnya</a>
-      </div>
+      <!-- item di-render via JS dari data.js -->
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq" id="faq">
+    <div class="faq__header" data-aos="fade-up">
+      <h2>Pertanyaan Seputar Green Data Center</h2>
+      <p>Pelajari lebih lanjut tentang konsep, efisiensi, dan masa depan teknologi berkelanjutan.</p>
+    </div>
+    <div class="faq__list" id="faq-list" data-aos="fade-up" data-aos-delay="100">
+      <!-- di-render dari data.js via main.js -->
     </div>
   </section>
 
   <!-- CTA KOMUNITAS -->
-  <section class="cta-komunitas" id="cta-komunitas">
-    <h2 data-aos="fade-up">Gabung dan Diskusi Bareng Komunitas</h2>
-    <p data-aos="fade-up">Placeholder ajakan bergabung ke forum diskusi.</p>
-    <a href="forum.html" class="btn btn--primary" data-aos="fade-up">Ke Halaman Forum</a>
+  <section class="premium-cta" id="cta-komunitas" data-aos="fade-up" data-aos-duration="800">
+    <div class="premium-cta__content">
+      <h2>Siap Berkontribusi?</h2>
+      <p>Jadilah bagian dari komunitas kami yang peduli terhadap efisiensi energi. Diskusikan, pelajari, dan kembangkan solusi infrastruktur hijau bersama para penggiat industri lainnya.</p>
+    </div>
+    <div class="premium-cta__action">
+      <a href="forum.html" class="btn btn--primary">Masuk ke Forum</a>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; 2026 Green Data Center — ITCC Web Design Competition. Placeholder footer.</p>
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Green<span>DataCenter</span></div>
+        <p class="footer__tagline">Membangun masa depan komputasi yang efisien dan ramah lingkungan untuk bumi yang lebih baik.</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Utama</a>
+        <a href="artikel.html">Edukasi</a>
+        <a href="forum.html">Forum</a>
+        <a href="portfolio.html">Portfolio</a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 14px;">
+      &copy; 2026 Green Data Center.
+    </div>
   </footer>
 
   <!-- Library JS -->
@@ -140,7 +181,7 @@
   <script src="lib/gsap/gsap.min.js"></script>
 
   <!-- Custom JS -->
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js?v=11"></script>
+  <script src="js/main.js?v=11"></script>
 </body>
 </html>
