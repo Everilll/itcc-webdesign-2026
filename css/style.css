@@ -858,10 +858,12 @@ h3 {
 }
 
 .wawasan-featured img,
-.wawasan-featured .placeholder-img {
+.wawasan-featured .placeholder-img,
+.wawasan-featured__img {
   width: 100%;
   height: 240px;
   object-fit: cover;
+  border-radius: inherit;
 }
 
 .wawasan-featured__content {
