@@ -4,14 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Data Center | Forum Diskusi</title>
+  <meta name="description" content="Berbagi ide, solusi, dan wawasan tentang teknologi pusat data yang ramah lingkungan bersama komunitas.">
 
   <link rel="stylesheet" href="lib/aos/aos.css">
-  <link rel="stylesheet" href="lib/boxicons/boxicons.min.css">
+  <link rel="stylesheet" href="lib/boxicons/css/boxicons.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- GLOBAL BACKGROUND -->
+  <div class="global-bg" aria-hidden="true">
+    <div class="global-aurora"><i></i><i></i><i></i></div>
+    <div class="global-floating">
+      <i class='bx bx-leaf'></i>
+      <i class='bx bx-data'></i>
+      <i class='bx bx-server'></i>
+      <i class='bx bx-chip'></i>
+      <i class='bx bx-wifi'></i>
+      <i class='bx bx-planet'></i>
+      <i class='bx bx-cloud'></i>
+      <i class='bx bx-bulb'></i>
+      <i class='bx bx-leaf'></i>
+      <i class='bx bx-server'></i>
+    </div>
+  </div>
 
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="navbar__logo">Green<span>DataCenter</span></div>
     <nav class="navbar__menu">
       <ul>
@@ -27,29 +44,13 @@
   </header>
 
   <section class="page-header">
-    <h1 data-aos="fade-up">Forum Diskusi</h1>
-    <p data-aos="fade-up">Placeholder: ajakan diskusi seputar server hemat energi & smart sustainability.</p>
+    <h1>Forum Diskusi</h1>
+    <p>Berbagi ide, solusi, dan wawasan tentang teknologi pusat data yang ramah lingkungan.</p>
   </section>
 
-  <!-- FORM POSTING BARU -->
-  <section class="forum-form" id="forum-form">
-    <h2>Buat Diskusi Baru</h2>
-    <form id="form-diskusi">
-      <div class="form-group">
-        <label for="nama">Nama</label>
-        <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
-      </div>
-      <div class="form-group">
-        <label for="judul">Judul Diskusi</label>
-        <input type="text" id="judul" name="judul" placeholder="Judul topik diskusi" required>
-      </div>
-      <div class="form-group">
-        <label for="isi">Isi</label>
-        <textarea id="isi" name="isi" rows="4" placeholder="Tulis diskusimu di sini..." required></textarea>
-      </div>
-      <button type="submit" class="btn btn--primary">Kirim Diskusi</button>
-    </form>
-  </section>
+  <!-- FORUM CONTAINER -->
+  <main class="forum-container">
+    <div class="forum-content">
 
   <!-- FILTER -->
   <section class="forum-filter" id="forum-filter">
@@ -62,24 +63,54 @@
   <!-- LIST DISKUSI -->
   <section class="forum-list" id="forum-list">
     <!-- gabungan dummy data.js + localStorage, di-render via forum.js -->
-    <article class="forum-post" data-aos="fade-up">
-      <div class="forum-post__header">
-        <span class="forum-post__nama">Placeholder Nama</span>
-        <span class="forum-post__tanggal">Placeholder Tanggal</span>
-      </div>
-      <h3 class="forum-post__judul">Judul Diskusi Placeholder</h3>
-      <p class="forum-post__isi">Isi diskusi placeholder untuk contoh tampilan sebelum data asli di-render.</p>
-    </article>
   </section>
+    </div>
+
+    <!-- FORM POSTING BARU (di desktop akan sticky di kanan) -->
+    <aside class="forum-form" id="forum-form">
+      <h2>Mulai Diskusi Baru</h2>
+      <form id="form-diskusi">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="judul">Judul Diskusi</label>
+          <input type="text" id="judul" name="judul" placeholder="Singkat dan jelas" required>
+        </div>
+        <div class="form-group">
+          <label for="isi">Pesan Anda</label>
+          <textarea id="isi" name="isi" rows="5" placeholder="Tuliskan detail diskusi Anda di sini..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary"><i class='bx bx-send'></i> Kirim Diskusi</button>
+      </form>
+    </aside>
+
+  </main>
 
   <footer class="footer">
-    <p>&copy; 2026 Green Data Center — ITCC Web Design Competition. Placeholder footer.</p>
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Green<span>DataCenter</span></div>
+        <p class="footer__tagline">Membangun masa depan komputasi yang efisien dan ramah lingkungan untuk bumi yang lebih baik.</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Utama</a>
+        <a href="artikel.html">Edukasi</a>
+        <a href="forum.html">Forum</a>
+        <a href="portfolio.html">Portfolio</a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 14px;">
+      &copy; 2026 Green Data Center — ITCC Web Design Competition.
+    </div>
   </footer>
 
   <script src="lib/jquery/jquery-3.7.1.min.js"></script>
   <script src="lib/aos/aos.js"></script>
-  <script src="js/data.js"></script>
+  <script src="lib/gsap/gsap.min.js"></script>
+  <script src="js/data.js?v=2"></script>
   <script src="js/forum.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
