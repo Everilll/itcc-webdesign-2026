@@ -35,7 +35,7 @@ const DATA_ARTIKEL = [
       <p>Google menggunakan AI untuk mengoptimalkan sistem pendinginan di data center mereka, menghasilkan penghematan energi pendinginan hingga 40%. Sistem ini mempelajari pola beban kerja dan kondisi lingkungan untuk memprediksi kebutuhan pendinginan secara real-time.</p>
       <p>Dengan semakin meningkatnya kebutuhan komputasi AI dan cloud computing, liquid cooling bukan lagi opsi eksperimental — melainkan kebutuhan mendasar untuk data center masa depan yang berkelanjutan.</p>
     `,
-    gambar: "assets/img/artikel-cooling.jpg",
+    gambar: "assets/img/artikel/liquid-cooling.jpg",
     tanggal: "15 Okt 2024",
     waktuBaca: "5 mnt baca",
   },
@@ -60,7 +60,7 @@ const DATA_ARTIKEL = [
       <p>DeepMind menerapkan reinforcement learning untuk mengontrol sistem pendinginan data center Google, menghasilkan penurunan konsumsi energi pendinginan sebesar 40%. Sistem ini terus belajar dan beradaptasi, semakin efisien seiring waktu.</p>
       <p>Ke depan, AI akan menjadi "otak" di balik setiap data center hijau — mengoordinasikan energi terbarukan, penyimpanan baterai, beban kerja komputasi, dan sistem pendinginan menjadi satu ekosistem yang terintegrasi dan sangat efisien.</p>
     `,
-    gambar: "assets/img/artikel-ai.jpg",
+    gambar: "assets/img/artikel/data-center-hijau-artikel.jpg",
     tanggal: "12 Okt 2024",
     waktuBaca: "6 mnt baca",
   },
@@ -93,7 +93,7 @@ const DATA_ARTIKEL = [
       <p>Google mencapai 100% renewable energy matching untuk operasi globalnya sejak 2017. Apple mengoperasikan seluruh data center mereka dengan 100% energi terbarukan. Meta (Facebook) berkomitmen mencapai net-zero emissions untuk seluruh value chain pada 2030.</p>
       <p>Transisi ini menunjukkan bahwa reliability dan sustainability bukan hal yang saling bertentangan — dengan perencanaan yang tepat, keduanya bisa berjalan beriringan.</p>
     `,
-    gambar: "assets/img/artikel-energy.jpg",
+    gambar: "assets/img/artikel/energi-terbarukan.webp",
     tanggal: "8 Okt 2024",
     waktuBaca: "7 mnt baca",
   },
@@ -119,7 +119,7 @@ const DATA_ARTIKEL = [
       <h3>Langkah 5: Pasang Monitoring Real-time</h3>
       <p>Gunakan tools open-source seperti Grafana + Prometheus untuk monitoring real-time konsumsi energi, suhu, dan PUE. Dashboard visual membantu tim operasional mengidentifikasi anomali dan mengambil tindakan proaktif.</p>
     `,
-    gambar: "assets/img/artikel-transisi.jpg",
+    gambar: "assets/img/artikel/transisi-energi.jpg",
     tanggal: "5 Okt 2024",
     waktuBaca: "5 mnt baca",
   },
@@ -148,7 +148,7 @@ const DATA_ARTIKEL = [
       <h3>Studi Kasus: Data Center Singapura</h3>
       <p>Beberapa operator data center di Singapura berhasil mencapai PUE di bawah 1.3 meskipun berada di iklim tropis, menggunakan kombinasi liquid cooling, AI-optimized HVAC, dan desain bangunan yang mengintegrasikan ventilasi natural untuk area non-kritis.</p>
     `,
-    gambar: "assets/img/artikel-tropis.jpg",
+    gambar: "assets/img/artikel/efisiensi-ekstrim.png",
     tanggal: "1 Okt 2024",
     waktuBaca: "6 mnt baca",
   },
@@ -183,7 +183,7 @@ const DATA_ARTIKEL = [
       <p><code>PUE = total_facility_power / total_it_equipment_power</code></p>
       <p>Dengan smart plug di PDU utama dan PDU IT, Anda bisa mendapatkan angka PUE real-time yang di-update setiap beberapa detik. Ini jauh lebih berguna daripada pengukuran manual bulanan yang sering dilakukan di fasilitas kecil.</p>
     `,
-    gambar: "assets/img/artikel-monitoring.jpg",
+    gambar: "assets/img/artikel/monitoring-artikel.png",
     tanggal: "28 Sep 2024",
     waktuBaca: "8 mnt baca",
   },
@@ -198,7 +198,7 @@ const DATA_PORTFOLIO = [
     judul: "EcoVault Data Center",
     deskripsi:
       "Desain konseptual data center modular dengan atap panel surya, sistem pendinginan hybrid (liquid + evaporative), dan rainwater harvesting untuk cooling tower. Kapasitas 2MW IT load dengan target PUE 1.10.",
-    gambar: "assets/img/portfolio-ecovault.jpg",
+    gambar: "assets/img/portfolio/ecovault.jpg",
     kategori: "Desain Fasilitas",
   },
   {
@@ -206,7 +206,7 @@ const DATA_PORTFOLIO = [
     judul: "Green Server Rack dengan Vertical Garden",
     deskripsi:
       "Integrasi vertical garden ke dalam desain server rack enclosure, memanfaatkan exhaust heat untuk mempercepat pertumbuhan tanaman sekaligus menyediakan insulation natural. Proyek kolaborasi antara IT dan biologi.",
-    gambar: "assets/img/portfolio-garden.jpg",
+    gambar: "assets/img/portfolio/garden.jpg",
     kategori: "Inovasi Hijau",
   },
   {
@@ -214,7 +214,7 @@ const DATA_PORTFOLIO = [
     judul: "Solar-Powered Micro Data Center",
     deskripsi:
       "Micro data center off-grid bertenaga surya untuk komunitas pedesaan. Dilengkapi 20 kWp solar array, battery storage 40 kWh, dan 4 server low-power ARM untuk layanan edge computing dan local CDN.",
-    gambar: "assets/img/portfolio-solar.jpg",
+    gambar: "assets/img/portfolio/solar.jpg",
     kategori: "Energi Terbarukan",
   },
   {
@@ -222,7 +222,7 @@ const DATA_PORTFOLIO = [
     judul: "AI-Driven Cooling Optimization",
     deskripsi:
       "Dashboard dan algoritma reinforcement learning untuk mengoptimalkan parameter HVAC di data center secara real-time. Prototype berhasil menurunkan konsumsi energi pendinginan sebesar 35% di test environment.",
-    gambar: "assets/img/portfolio-aicooling.jpg",
+    gambar: "assets/img/portfolio/aicooling.png",
     kategori: "AI & Monitoring",
   },
   {
@@ -230,7 +230,7 @@ const DATA_PORTFOLIO = [
     judul: "Wind-Powered Edge Computing Hub",
     deskripsi:
       "Hub edge computing yang terintegrasi dengan turbine angin skala kecil (10 kW). Dirancang untuk aplikasi IoT pertanian dan monitoring lingkungan di area remote dengan konektivitas grid terbatas.",
-    gambar: "assets/img/portfolio-wind.jpg",
+    gambar: "assets/img/portfolio/wind.jpg",
     kategori: "Energi Terbarukan",
   },
   {
@@ -238,7 +238,7 @@ const DATA_PORTFOLIO = [
     judul: "Underwater Cooling System Prototype",
     deskripsi:
       "Prototype sistem pendinginan yang memanfaatkan air laut pada kedalaman 30 meter sebagai heat sink natural. Terinspirasi dari Project Natick Microsoft, diadaptasi untuk skala yang lebih kecil dan terjangkau.",
-    gambar: "assets/img/portfolio-underwater.jpg",
+    gambar: "assets/img/portfolio/underwater.jpg",
     kategori: "Desain Fasilitas",
   },
 ];
