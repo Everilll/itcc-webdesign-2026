@@ -160,10 +160,24 @@ h3 {
 
 .accent,
 .typed-text {
-  background: linear-gradient(120deg, var(--green-light), var(--green-deep));
+  background: linear-gradient(120deg, var(--green-light) 0%, var(--green) 45%, var(--green-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.marked-text {
+  background: linear-gradient(120deg, var(--green-light) 0%, var(--green-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.1em;
+  text-decoration: underline;
+  text-decoration-color: rgba(34, 197, 94, 0.35);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.12em;
+  text-decoration-skip-ink: auto;
 }
 
 .typed-cursor {
