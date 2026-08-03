@@ -2083,6 +2083,9 @@ h3 {
 @media (max-width: 768px) {
   section {
     padding: 50px 20px;
+    /* Breathing room di layar sempit: konten nggak mepet kiri-kanan */
+    padding-left: clamp(24px, 6vw, 40px);
+    padding-right: clamp(24px, 6vw, 40px);
   }
 
   .navbar {
