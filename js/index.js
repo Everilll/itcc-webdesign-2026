@@ -472,6 +472,22 @@ $(document).ready(function () {
     if ($activeAnswer.length) {
       $activeAnswer.css("max-height", $activeAnswer.prop("scrollHeight") + "px");
     }
+
+    function reMeasureOpenAnswer() {
+      var $open = $(".faq__item.active .faq__answer");
+      if ($open.length) $open.css("max-height", $open.prop("scrollHeight") + "px");
+    }
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(reMeasureOpenAnswer);
+    }
+
+    // Ukur ulang setiap kali layout berubah (lebar layar berubah → tinggi konten berubah)
+    var reMeasureTimer;
+    $(window).on("resize", function () {
+      clearTimeout(reMeasureTimer);
+      reMeasureTimer = setTimeout(reMeasureOpenAnswer, 150);
+    });
   })();
 
   // 9. SCROLL-TO-TOP BUTTON
